@@ -1,5 +1,10 @@
 pipeline {
     agent any
+    
+    stage('scm checkout'){
+		   git 'https://github.com/sujata31/maven-project.git'	
+              		
+		}
 
     stages {
         stage ('Compile Stage') {
