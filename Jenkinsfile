@@ -3,10 +3,14 @@ pipeline {
     
     stages {
 	    
-    stage('scm checkout'){
+        stage('scm checkout'){
+		
+		steps{
+		
 		   git 'https://github.com/sujata31/jenkins-example.git'	
               		
 		}
+	}
 
     
         stage ('Compile Stage') {
